@@ -5,7 +5,7 @@ import android.support.v7.app.ActionBarActivity;
 
 
 /**
- * O memory leak aqui acontece pois está sendo passado o contexto da classe para uma
+ * O memory leak aqui acontece pois está sendo passado o contexto da activity para uma
  * instância singleton, como essa instância irá existir durante toda a aplicação
  * então ela vai manter a referência para essa activity mesmo após ela ser destruída.
  */
