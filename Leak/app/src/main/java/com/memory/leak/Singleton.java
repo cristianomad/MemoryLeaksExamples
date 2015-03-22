@@ -22,7 +22,7 @@ public class Singleton {
     }
 
     protected Singleton () {
-        mListenerQueue = new ArrayList<>();
+        mListenerQueue = new ArrayList<OnTaskCompleteListener>();
     }
 
     public void addListener(OnTaskCompleteListener listener) {
@@ -36,6 +36,13 @@ public class Singleton {
             if (listener != null)
                 listener.onTaskComplete();
         }
+
+        /**
+         * Solução:
+         * Uma das soluções é remover essa referência antes que a activity seja destruída.
+         */
+
+        // mListenerQueue.clear();
     }
 
 }
