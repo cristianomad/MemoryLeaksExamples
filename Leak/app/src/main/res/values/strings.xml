@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Leak</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="leak_example">Leak Example</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_anonymous_class_leak">ExampleAnonymousClassLeak</string>
+    <string name="title_inner_class_leak">ExampleInnerClassLeak</string>
+    <string name="title_context_leak">ExampleContextLeak</string>
+</resources>
