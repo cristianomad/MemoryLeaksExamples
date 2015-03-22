@@ -20,7 +20,8 @@ public class ContextLeakActivity extends ActionBarActivity {
         sgt.setContext(this);
 
         /**
-         * Solução. Ao passar o contexto da aplicação o memory leak não irá acontecer,
+         * Solução:
+         * Ao passar o contexto da aplicação o memory leak não irá acontecer,
          * pois o contexto da aplicação é o mesmo durante toda a execução da aplicação
          */
 
